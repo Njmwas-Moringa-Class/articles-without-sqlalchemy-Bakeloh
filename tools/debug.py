@@ -4,25 +4,24 @@
 
 import os
 import sys
-sys.path.append('../lib') # Assuming 'lib' is one level above 'tools'
+import ipdb
+
+
+sys.path.append('../lib') 
+
+
 print(os.getcwd())
 print(sys.path)
 print(os.listdir())
 
-import ipdb
+
 
 from Author import Author
 from Magazine import Magazine
 from Article import Article
 
-# import sys
-# sys.path.append('modules')  # Adjust the path to the correct location
 
-# from Author import Author
-# from Magazine import Magazine
-# from Article import Article
-
-if __name__ == '__main__':
+# if __name__ == '__main__':
     #  WRITE YOUR TEST CODE HERE ###
     
 
@@ -41,6 +40,8 @@ if __name__ == '__main__':
     article2 = author2.add_article(magazine1, "How Not to Save")
     article3 = author1.add_article(magazine2, "Unemployment Impact on Saccos")
 
+
+if __name__ == '__main__':
     # Test code
     print("Authors:")
     for author in Author.all():
